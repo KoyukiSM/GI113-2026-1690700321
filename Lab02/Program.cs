@@ -42,9 +42,72 @@ namespace Lab02
             Console.WriteLine($"HP: {remainingHp} / {maxHp}");
             Console.WriteLine($"Hp: {remainingHpPercentage}%");
             Console.WriteLine("");
+            Console.WriteLine("=================================================================");
+            Console.WriteLine("Simulation stability state: critical. Reset protocol initiated...");
+            Console.WriteLine("...");
+            Console.WriteLine("..");
+            Console.WriteLine(".");
+            Console.WriteLine("Reset protocol completed. Please select your new companion.");
+            Console.WriteLine("=================================================================");
+            Console.WriteLine("");
+            string nameAlice = "Alice";
+            string raceAlice = "Human";
+            string classAlice = "Magician";
+            int ageAlice = 26;
+            char genderAlice = 'F';
+            double heightAlice = 1.65;
+            Console.WriteLine("Companion 1 Data:");
+            Console.WriteLine($"Name: {nameAlice}");
+            Console.WriteLine($"Race: {raceAlice}");
+            Console.WriteLine($"Gender: {genderAlice}");
+            Console.WriteLine($"Age: {ageAlice}");
+            Console.WriteLine($"height: {heightAlice} M");
+            Console.WriteLine($"Class: {classAlice}");
             Console.WriteLine("");
 
+            string nameThyme = "Thyme";
+            string raceThyme = "Wood-Elf";
+            string classThyme = "Ranger";
+            int ageThyme = 169;
+            char genderThyme = 'F';
+            double heightThyme = 1.77;
+            Console.WriteLine("Companion 2 Data:");
+            Console.WriteLine($"Name: {nameThyme}");
+            Console.WriteLine($"Race: {raceThyme}");
+            Console.WriteLine($"Gender: {genderThyme}");
+            Console.WriteLine($"Age: {ageThyme}");
+            Console.WriteLine($"height: {heightThyme} M");
+            Console.WriteLine($"Class: {classThyme}");
+            Console.WriteLine("");
 
+            string nameTaki = "Taki";
+            string raceTaki = "Halfling (Canine)";
+            string classTaki = "Fighter";
+            int ageTaki = 43;
+            char genderTaki = 'M';
+            double heightTaki = 1.82;
+            Console.WriteLine("Companion 3 Data:");
+            Console.WriteLine($"Name: {nameTaki}");
+            Console.WriteLine($"Race: {raceTaki}");
+            Console.WriteLine($"Gender: {genderTaki}");
+            Console.WriteLine($"Age: {ageTaki}");
+            Console.WriteLine($"height: {heightTaki} M");
+            Console.WriteLine($"Class: {classTaki}");
+            Console.WriteLine("");
+
+            string nameUnknown = "Ko";
+            string raceUnknown = "Halfling (???)";
+            string ageUnknown = "Physically in mid 30 (Presumably older than Tonantzintla-618";
+            string genderUnknown = "Physically F";
+            string heightUnknown = "Physically 1.8";
+            bool unknownStatus = true;
+            Console.WriteLine("Companion 4 Data: (Locked)");
+            Console.WriteLine($"Name: {nameUnknown}");
+            Console.WriteLine($"Race: {raceUnknown}");
+            Console.WriteLine($"Gender: {genderUnknown}");
+            Console.WriteLine($"Age: {ageUnknown}");
+            Console.WriteLine($"height: {heightUnknown} M");
+            Console.WriteLine($"Safe to approach?:...{unknownStatus}.");
         }
     }
 }
