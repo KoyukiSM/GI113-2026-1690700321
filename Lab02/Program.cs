@@ -40,7 +40,7 @@ namespace Lab02
             int remainingHpPercentage = remainingHp * 100 / maxHp;
             Console.WriteLine("===== BOSS STATUS: AFTER DAMAGE =====");
             Console.WriteLine($"HP: {remainingHp} / {maxHp}");
-            Console.WriteLine($"Hp: {remainingHpPercentage}%");
+            Console.WriteLine($"HP: {remainingHpPercentage}%");
             Console.WriteLine("");
             Console.WriteLine("=================================================================");
             Console.WriteLine("Simulation stability state: critical. Reset protocol initiated...");
