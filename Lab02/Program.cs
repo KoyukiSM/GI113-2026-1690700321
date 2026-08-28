@@ -32,7 +32,7 @@ namespace Lab02
 
             int hpPercent = currentHp * 100 / maxHp;
             Console.WriteLine("");
-            Console.WriteLine($"Hp Percent: {hpPercent}%");
+            Console.WriteLine($"HP Percent: {hpPercent}%");
             Console.WriteLine("");
             Console.WriteLine($"Kirin takes {damageTaken} damage!");
             Console.WriteLine("");
