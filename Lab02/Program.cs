@@ -97,7 +97,7 @@ namespace Lab02
 
             string nameUnknown = "Ko";
             string raceUnknown = "Halfling (???)";
-            string ageUnknown = "Physically in mid 30 (Presumably older than Tonantzintla-618";
+            string ageUnknown = "Physically in mid 30 (Presumably older than Tonantzintla-618)";
             string genderUnknown = "Physically F";
             string heightUnknown = "Physically 1.8";
             bool unknownStatus = true;
