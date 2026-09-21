@@ -94,9 +94,9 @@ namespace Lab06
                 Console.WriteLine("The door stays shut.");
             }*/
 
-            Console.WriteLine("<<Totally Original Turn Base Game>>");
+            Console.WriteLine("<<Totally Original Turn Based Game>>");
             Console.WriteLine("\n[> 5 Tons Giant Slime has appeared! <]");
-            
+
             int heroHP = 25;
             int heroATK = 10;
             int slimeHP = 150;
@@ -111,39 +111,42 @@ namespace Lab06
             Console.Write("\nYour action: ");
             bool check = char.TryParse(Console.ReadLine(), out char choice);
 
-            if (choice == '1')
+            if (check && choice == '1')
             {
-                Console.WriteLine($"You attacked! Which dealt {heroATK} Damage to 5 Tons Giant Slime.");
+                Console.WriteLine($"\nYou attacked! Which dealt {heroATK} Damage to 5 Tons Giant Slime.");
                 Console.WriteLine($"5 Tons Giant Slime HP: {slimeHP - heroATK}");
                 Console.WriteLine($"Slime counter attacked you for {slimeATK} damage.");
                 Console.WriteLine($"Your HP: {heroHP - slimeATK}");
                 if (heroHP - slimeATK <= 0)
                 {
-                    Console.WriteLine("You died.");
+                    Console.WriteLine("\n[>You died<]");
                 }
             }
-            else if (choice == '2')
+            else if (check && choice == '2')
             {
-                Console.WriteLine("You tried to evade the attack.");
-                Console.WriteLine($"That slime is literally the size of the building. You can't dodge that and took a full hit.");
+                Console.WriteLine("\nYou tried to evade the attack.");
+                Console.WriteLine("That slime is literally the size of a 5 storey building. You're dodging nothing bud.");
+                Console.WriteLine($"Slime attacked you for {slimeATK} damage.");
                 Console.WriteLine($"Your HP: {heroHP - slimeATK}");
                 if (heroHP - slimeATK <= 0)
                 {
-                    Console.WriteLine("You died.");
+                    Console.WriteLine("\n[>You died<]");
                 }
             }
-            else if (choice == '3')
+            else if (check && choice == '3')
             {
-                Console.WriteLine("That thing is literally 5 tons giant slime. You ain't going to run away, bro. It caught you.)");
+                Console.WriteLine("\nYou tried to flee from it.");
+                Console.WriteLine("Its body surface area is big enough to block all of your escape route. You ain't going to run away, bro. It caught you.");
+                Console.WriteLine($"Slime attacked you for {slimeATK} damage.");
                 Console.WriteLine($"Your HP: {heroHP - slimeATK}");
                 if (heroHP - slimeATK <= 0)
                 {
-                    Console.WriteLine("You died.");
+                    Console.WriteLine("\n[>You died<]");
                 }
             }
             else
             {
-                Console.WriteLine("You supposed to choose between 1 - 3. Now you bricked the whole game. (Slime ate you and you died by the way.");
+                Console.WriteLine("You're supposed to choose between 1 - 3. Now you bricked the whole game. (Slime ate you and you died by the way.)");
             }
         }
     }
